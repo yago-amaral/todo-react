@@ -1,0 +1,51 @@
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid hsl(236, 31%, 30%);
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.todo-item span {
+    width: 100%;
+    border-radius: inherit;
+    padding: 15px;
+    color: white;
+}
+
+.todo-item span:hover {
+    background-color: hsl(236, 31%, 15%);
+}
+.todo-item.completed {
+    border: none;
+    background-color: hsl(236, 31%, 10%);
+}
+
+.todo-item.completed span {
+    color: hsl(236, 31%, 25%);
+    text-decoration: line-through;
+    opacity: 0.9;
+}
+
+.todo-item.completed span:hover {
+    background-color: inherit;
+}
+
+.delete-btn {
+    background: transparent;
+    width: 30%;
+    border: 1px solid #db1e1e;
+    color: #db1e1e;
+    cursor: pointer;
+    padding: 15px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.delete-btn:hover {
+    border: none;
+    background-color: #db1e1e;
+    color: black;
+}
