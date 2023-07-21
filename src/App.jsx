@@ -1,8 +1,11 @@
 import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+    const listState = useState([]);
+
     return (
         <div className='App'>
             <h1>Listinha de Tarefas</h1>
@@ -12,11 +15,11 @@ function App() {
                 height: "1px"
             }} />
 
-            <TodoForm />
+            <TodoForm listState={listState} />
 
-            <TodoList />
+            <TodoList listState={listState} />
         </div>
     );
 }
 
-export default App
+export default App;
