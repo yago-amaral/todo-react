@@ -1,0 +1,21 @@
+.todo-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.delete-all-btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #e91212;
+    border: 1px solid #e91212;
+    border-radius: 5px;
+}
+
+.delete-all-btn:hover {
+    background-color: #e91212;
+    color: black;
+}
