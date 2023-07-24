@@ -13,7 +13,7 @@ function TodoForm({ listState }) {
                     setInputText("");
                 }
             }>
-            <input type="text" required value={inputText} placeholder="Adicione uma tarefa" onChange={
+            <input type="text" required maxLength={30} value={inputText} placeholder="Adicione uma tarefa" onChange={
                 (e) => {
                     setInputText(e.target.value);
                 }
