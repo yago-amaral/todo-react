@@ -26,7 +26,7 @@ function TodoForm({ listState }) {
 function addNewItem(inputText, [list, setList]) {
     const newList = [...list];
 
-    newList.unshift(inputText);
+    newList.push(inputText);
     setList(newList);
 };
 

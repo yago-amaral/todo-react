@@ -41,8 +41,6 @@ function deleteItem([list, setList], itemIndex) {
 
     newList.splice(itemIndex, 1);
     setList(newList);
-
-    console.log(`Item ${itemIndex} deletado`);
 }
 
 export default TodoItem;
